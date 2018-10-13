@@ -1,0 +1,69 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<script>
+function finalize()
+{
+	var frst=document.forms[0].frstname.value
+	var scnd=document.forms[0].lastname.value
+	var mail=document.forms[0].emailid.value
+	if(frst==""||scnd==""||mail==""){alert("PLEASE MAKE SURE THAT ALL THE FIELDS ARE FILLED PROPERLY");
+		return false;
+		}
+	else
+	{
+		alert("CONGRATULATIONS ! YOU ARE NOW SUCCESSFULLY SUBSCRIBED TO OUR NEWS LETTERS");
+		return true;
+	}
+}
+</script>
+<title>SUBSCRIPTION TO NEWS</title>
+<style>
+body {
+     background-image: url("menu_back.jpg");
+}
+.btn-group .button {
+    background-image: url("background-nav.jpg");
+    color: white;
+    font-size: 17px;
+    border: none;
+    padding: 15px 100px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+div {
+    text-align: center;
+}
+p {
+    
+    letter-spacing: 2px;
+}
+
+</style>
+</head>
+<body>
+<div class="btn-group">
+<a href="about.html"><button class="button button1">ABOUT</button>
+<a href="main code.html"><button class="button button2">HOME</button>
+<a href="Menu.html"><button class="button button3">MENU</button>
+<a href="reservation.html"><button class="button button4">RESERVATION</button>
+<a href="contact.html"><button class="button button5">CONTACT</button></a>
+</div>
+<h2><strong>OUR ACHIEVEMENTS</strong></h2>
+<img src="newspic.png" width="100%" height="50%" />
+<hr style="width:70%;height:1px"/>
+<div>
+<h2><strong>PLEASE FEEL FREE TO SUBSCRIBE TO OUR NEWS LETTERS</strong></h2>
+<p>WE TRY UR BEST NOT TO ANNOY YOU WITH REPETITIVE UPDATES</p>
+</div>
+<form action=""method="post"onsubmit="finalize()">
+FIRST NAME:<input type="text"name="frstname" value=""/>
+LAST NAME:<input type="text"name="lastname" value=""/>
+EMAIL ID:<input type="text"align="right"name="emailid" value=""/>
+<br/>
+<input type="submit"name="btnSubmit"value="Submit"/>
+</form>
+<img src="subs1.png" width="100%" height="50%" />
+</body>
+</html>
